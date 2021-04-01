@@ -12,6 +12,6 @@
 <div class="form-element full-width">
       <label>Quality Flag Filters</label><br>
         <p>Observation data flagged with any of the checked quality flags is excluded from analysis. The corresponding forecast data is also excluded.</p>
-          <input type="checkbox" name="quality_flags" value="USER_FLAGGED" {% if form_data %}{% if 'USER_FLAGGED' in form_data['report_parameters']['filters']['quality_flags'] %}checked{% endif %}{%endif %}> USER FLAGGED<br/>
+          <input type="checkbox" name="quality_flags" value="USER FLAGGED" {% if form_data %}{% if 'USER FLAGGED' in form_data['report_parameters']['quality_flags'] %}checked{% endif %}{%endif %}> USER FLAGGED<br/>
 </div>
 {% endblock %}
